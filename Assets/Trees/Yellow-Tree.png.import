@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blqwwhrvja0er"
-path="res://.godot/imported/Yellow-Tree.png-c5d23990fa148a6c4bf8febe50efa81b.ctex"
+uid="uid://c4kjba85etm6w"
+path="res://.godot/imported/Yellow-Tree.png-47e888e277c88df0910455a7a3970bf5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Trees/Yellow-Tree.png"
-dest_files=["res://.godot/imported/Yellow-Tree.png-c5d23990fa148a6c4bf8febe50efa81b.ctex"]
+source_file="res://assets/Trees/Yellow-Tree.png"
+dest_files=["res://.godot/imported/Yellow-Tree.png-47e888e277c88df0910455a7a3970bf5.ctex"]
 
 [params]
 

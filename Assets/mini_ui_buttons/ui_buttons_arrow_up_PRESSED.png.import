@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dm1tdvgxt5tpo"
-path="res://.godot/imported/ui_buttons_arrow_up_PRESSED.png-7efcfa6fc8287dbed2e1e2c5501ebd38.ctex"
+uid="uid://y5jogp6nlrs5"
+path="res://.godot/imported/ui_buttons_arrow_up_PRESSED.png-7bb732b2e0af3eb60a5daeebe6fa6b04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/mini_ui_buttons/ui_buttons_arrow_up_PRESSED.png"
-dest_files=["res://.godot/imported/ui_buttons_arrow_up_PRESSED.png-7efcfa6fc8287dbed2e1e2c5501ebd38.ctex"]
+source_file="res://assets/mini_ui_buttons/ui_buttons_arrow_up_PRESSED.png"
+dest_files=["res://.godot/imported/ui_buttons_arrow_up_PRESSED.png-7bb732b2e0af3eb60a5daeebe6fa6b04.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c37n5fqoux6tm"
-path="res://.godot/imported/Golden-Tree.png-d0bb61197417f3d523f91c4cbd0d06fe.ctex"
+uid="uid://b0y5h78wmjlb8"
+path="res://.godot/imported/Golden-Tree.png-fb903178bb6d7241cd2c13bd4df9b5e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Trees/Golden-Tree.png"
-dest_files=["res://.godot/imported/Golden-Tree.png-d0bb61197417f3d523f91c4cbd0d06fe.ctex"]
+source_file="res://assets/Trees/Golden-Tree.png"
+dest_files=["res://.godot/imported/Golden-Tree.png-fb903178bb6d7241cd2c13bd4df9b5e5.ctex"]
 
 [params]
 

@@ -10,8 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Coin Climb Desafio nas Alturas"
-run/main_scene="res://cenas/mundo.tscn"
+config/name="Coin-climb-desafio-nas-alturas"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
@@ -22,11 +21,15 @@ window/size/viewport_height=720
 window/stretch/mode="viewport"
 window/handheld/orientation=1
 
-[input_devices]
+[file_customization]
 
-pointing/emulate_touch_from_mouse=true
+folder_colors={
+"res://assets/": "red",
+"res://cenas/": "orange",
+"res://recursos/": "yellow",
+"res://scripts/": "green"
+}
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"

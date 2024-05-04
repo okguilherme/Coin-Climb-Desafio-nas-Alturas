@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://bl1k7qqgpcnmd"]
+
+[node name="cena_plataforma1" type="TileMap"]
+format = 2
