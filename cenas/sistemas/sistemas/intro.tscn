@@ -1,4 +1,19 @@
-[gd_scene format=3 uid="uid://bo4k5h8u2ld23"]
+[gd_scene load_steps=6 format=3 uid="uid://bo4k5h8u2ld23"]
+
+[ext_resource type="Texture2D" uid="uid://koxjxd1tpk30" path="res://assets/Background/Background.png" id="1_jedvg"]
+[ext_resource type="FontFile" uid="uid://c8l817kfx5j15" path="res://assets/fontes/OpenType (.otf)/Kaph-Regular.otf" id="2_61qk8"]
+[ext_resource type="FontFile" uid="uid://c1c6qte6w2cf4" path="res://assets/fontes/OpenType (.otf)/Kaph-Italic.otf" id="2_mjvtx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dknq4"]
+font = ExtResource("2_61qk8")
+font_size = 60
+font_color = Color(0.160784, 0.294118, 0.517647, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tkk03"]
+font = ExtResource("2_mjvtx")
+font_size = 26
+font_color = Color(0.160784, 0.294118, 0.517647, 1)
+shadow_color = Color(0, 0, 0, 1)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -8,13 +23,37 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(240, 363)
+scale = Vector2(1, 2.67509)
+texture = ExtResource("1_jedvg")
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 85.0
-offset_bottom = 23.0
-scale = Vector2(0.776771, 1.0658)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.5
+offset_top = -35.0
+offset_right = 225.5
+offset_bottom = 35.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-text = "Coin climb "
+size_flags_horizontal = 0
+text = "Coin Climb"
+label_settings = SubResource("LabelSettings_dknq4")
+horizontal_alignment = 1
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "Desafio nas Alturas"
+label_settings = SubResource("LabelSettings_tkk03")
 horizontal_alignment = 1
