@@ -49,8 +49,19 @@ script = ExtResource("1_ev80q")
 sprite_frames = SubResource("SpriteFrames_oxul3")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.00934627
+frame_progress = 0.383957
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_lus83")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.33, 1.33)
+limit_left = 0
+limit_top = 0
+limit_right = 480
+limit_bottom = 720
+limit_smoothed = true
+position_smoothing_speed = 10.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
