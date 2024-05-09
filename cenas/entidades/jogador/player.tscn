@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://ctpp6o3nw27fq"]
 
-[ext_resource type="Script" path="res://cenas/entidades/jogador/player.gd" id="1_ev80q"]
+[ext_resource type="Script" path="res://scripts/entidades/player/player.gd" id="1_bi8j8"]
 [ext_resource type="Texture2D" uid="uid://dr6r37klh4pfp" path="res://assets/Character/Idle/Idle-Sheet.png" id="2_tonel"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_woene"]
@@ -43,7 +43,7 @@ animations = [{
 size = Vector2(18, 47)
 
 [node name="player" type="CharacterBody2D"]
-script = ExtResource("1_ev80q")
+script = ExtResource("1_bi8j8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_oxul3")
