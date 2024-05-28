@@ -472,7 +472,7 @@ texture = ExtResource("1_a6lp6")
 sources/0 = SubResource("TileSetAtlasSource_w3jb7")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m4caj"]
-size = Vector2(78, 15)
+size = Vector2(77, 15)
 
 [sub_resource type="Curve2D" id="Curve2D_eosa5"]
 _data = {
@@ -518,24 +518,23 @@ _data = {
 }
 
 [node name="plataforma" type="Node2D"]
-position = Vector2(529, 351)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(-8, 7)
 
 [node name="TileMap" type="TileMap" parent="CharacterBody2D"]
-position = Vector2(18.0336, 0)
+position = Vector2(8, -7)
 tile_set = SubResource("TileSet_prows")
 format = 2
 layer_0/tile_data = PackedInt32Array(0, 720896, 15, 65534, 720896, 15)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(10, 8)
+position = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_m4caj")
 one_way_collision = true
 one_way_collision_margin = 8.3
 
 [node name="Path2D" type="Path2D" parent="."]
+position = Vector2(8, -7)
 curve = SubResource("Curve2D_eosa5")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]

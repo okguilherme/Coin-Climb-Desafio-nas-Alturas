@@ -19,7 +19,7 @@ func _physics_process(delta):
 		
 	#almentar velocidade
 	if Input.is_action_pressed("corre rapido"):
-		SPEED = 400
+		SPEED = 300
 	else: 
 		SPEED = 200
 	print(SPEED)

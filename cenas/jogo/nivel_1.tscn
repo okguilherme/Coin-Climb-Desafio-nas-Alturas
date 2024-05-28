@@ -14398,7 +14398,6 @@ sources/6 = SubResource("TileSetAtlasSource_22jdu")
 [node name="nivel 1" type="Node2D"]
 
 [node name="NinePatchRect" type="NinePatchRect" parent="."]
-offset_left = 16.0
 offset_top = 1.0
 offset_right = 1296.0
 offset_bottom = 721.0
@@ -14417,8 +14416,8 @@ layer_2/tile_data = PackedInt32Array(2555905, 131076, 2, 2555906, 65540, 2, 2555
 [node name="player" parent="." instance=ExtResource("8_yo0rg")]
 position = Vector2(1209, 387)
 
-[node name="plataforma" parent="." instance=ExtResource("10_jtcxd")]
-position = Vector2(554, 548)
-
 [node name="plataforma2" parent="." instance=ExtResource("10_jtcxd")]
 position = Vector2(664, 368)
+
+[node name="plataforma3" parent="." instance=ExtResource("10_jtcxd")]
+position = Vector2(528, 541)

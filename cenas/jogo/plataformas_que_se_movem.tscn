@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdmr2a7k5gbh4"]
+
+[ext_resource type="Script" path="res://scripts/jogo/plataformas que se movem/plataformas_que_se_movem.gd" id="1_4vkop"]
+[ext_resource type="Texture2D" uid="uid://dyf5336eh403m" path="res://assets/Assets/Tiles.png" id="1_es8u1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7ebb"]
+size = Vector2(50.3265, 14.6627)
+
+[node name="plataformas que se movem" type="Node2D"]
+script = ExtResource("1_4vkop")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="."]
+
+[node name="Tiles" type="Sprite2D" parent="AnimatableBody2D"]
+texture = ExtResource("1_es8u1")
+region_enabled = true
+region_rect = Rect2(178, 238, 45, 17)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D"]
+position = Vector2(8.79109e-07, 0.5)
+scale = Vector2(0.914031, 1.15941)
+shape = SubResource("RectangleShape2D_p7ebb")
