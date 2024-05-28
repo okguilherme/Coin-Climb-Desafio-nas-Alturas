@@ -472,13 +472,13 @@ texture = ExtResource("1_a6lp6")
 sources/0 = SubResource("TileSetAtlasSource_w3jb7")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m4caj"]
-size = Vector2(77, 15)
+size = Vector2(77.5, 15)
 
 [sub_resource type="Curve2D" id="Curve2D_eosa5"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, -8, 7, 0, 0, 0, 0, -114, 7)
+"points": PackedVector2Array(0, 0, 0, 0, -8, 7, 0, 0, 0, 0, -23, -102, 0, 0, 0, 0, -77, -211, 0, 0, 0, 0, -159, -294, 0, 0, 0, 0, -312, -315, 0, 0, 0, 0, -436, -290, 0, 0, 0, 0, -522, -185, 0, 0, 0, 0, -575, -111)
 }
-point_count = 2
+point_count = 8
 
 [sub_resource type="Animation" id="Animation_grjmq"]
 length = 0.001
@@ -495,8 +495,9 @@ tracks/0/keys = {
 "values": [0.0]
 }
 
-[sub_resource type="Animation" id="Animation_kvdjr"]
-resource_name = "plataforma 1"
+[sub_resource type="Animation" id="Animation_5nr6n"]
+resource_name = "plataforma_animation"
+length = 3.0
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -505,36 +506,35 @@ tracks/0/path = NodePath("Path2D/PathFollow2D:progress_ratio")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.5),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.3, 1.4, 1.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [0.0, 1.0]
+"values": [0.0, 0.0, 1.0, 1.0]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yvq6k"]
 _data = {
 "RESET": SubResource("Animation_grjmq"),
-"plataforma 1": SubResource("Animation_kvdjr")
+"plataforma_animation": SubResource("Animation_5nr6n")
 }
 
 [node name="plataforma" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(-8, 7)
 
 [node name="TileMap" type="TileMap" parent="CharacterBody2D"]
-position = Vector2(8, -7)
 tile_set = SubResource("TileSet_prows")
 format = 2
 layer_0/tile_data = PackedInt32Array(0, 720896, 15, 65534, 720896, 15)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(0.5, 0.5)
+position = Vector2(-7.75, 8)
 shape = SubResource("RectangleShape2D_m4caj")
 one_way_collision = true
 one_way_collision_margin = 8.3
 
 [node name="Path2D" type="Path2D" parent="."]
-position = Vector2(8, -7)
 curve = SubResource("Curve2D_eosa5")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
@@ -549,5 +549,5 @@ remote_path = NodePath("../../../CharacterBody2D")
 libraries = {
 "": SubResource("AnimationLibrary_yvq6k")
 }
-autoplay = "plataforma 1"
-speed_scale = -0.31
+autoplay = "plataforma_animation"
+speed_scale = 0.2

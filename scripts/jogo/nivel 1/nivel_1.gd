@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -7,10 +7,5 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
+func _process(delta):
 	pass
-
-
-func _on_button_pressed():
-	Transicao.scene_path = "res://cenas/jogo/nivel_1.tscn"
-	Transicao.fade_in()
