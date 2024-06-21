@@ -100,10 +100,22 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_1ocuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ocuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ocuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ocuj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ocuj")
 }],
 "loop": true,
 "name": &"jump",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -132,24 +144,22 @@ animations = [{
 }],
 "loop": true,
 "name": &"run",
-"speed": 5.0
+"speed": 7.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lus83"]
-size = Vector2(25, 54)
+size = Vector2(25, 52)
 
 [node name="player" type="CharacterBody2D"]
 script = ExtResource("1_bi8j8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_oxul3")
-animation = &"jump"
+animation = &"run"
 autoplay = "idle"
-frame = 3
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3.5, -1)
+position = Vector2(-3.5, -2)
 shape = SubResource("RectangleShape2D_lus83")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -167,5 +177,3 @@ drag_left_margin = 0.31
 drag_right_margin = 0.31
 editor_draw_limits = true
 editor_draw_drag_margin = true
-
-[connection signal="ready" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_ready"]

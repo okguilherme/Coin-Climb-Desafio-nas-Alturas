@@ -20,10 +20,13 @@ func _physics_process(delta):
 		jump = true 
 	elif is_on_floor():
 		jump = false
+		
 	#almentar velocidade
 	if Input.is_action_pressed("corre rapido"):
+		#animation.playback_speed = 2.5
 		SPEED = 300
-	else: 
+	else:
+		#animation.playback_speed = 1.0 
 		SPEED = 200
 		
 	
@@ -35,14 +38,14 @@ func _physics_process(delta):
 		animation.scale.x = direction
 		if jump == false:
 			animation.play("run")	
-	elif jump:
-		animation.play("jump")
+		elif jump:
+			animation.play("jump")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		animation.play("idle")
 	move_and_slide()
 
-	
+
 			
 	
 
